@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.N. PAYASHETTY | जे.एन. पायाशेट्टी किराणा स्टोअर</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-green: #064e3b; 
+            --brand-gold: #d97706;  
+            --surface-light: #fdfcf7; 
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--surface-light); 
+            color: #1f2937;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, .marathi-font { font-family: 'Khand', sans-serif; }
+
+        .hero-section {
+            background: linear-gradient(135deg, rgba(6, 78, 59, 0.95) 0%, rgba(20, 83, 45, 0.9) 100%), 
+                        url('https://images.unsplash.com/photo-1534951009808-df8158b679ce?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(6, 78, 59, 0.1);
+        }
+
+        .action-button {
+            background: #d97706;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .action-button:hover {
+            background: #b45309;
+            transform: translateY(-2px);
+        }
+
+        .price-row:nth-child(even) { background-color: rgba(6, 78, 59, 0.03); }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold text-emerald-900 leading-none">J.N. पायाशेट्टी</h1>
+                <p class="text-[10px] text-amber-700 font-bold tracking-[0.2em] uppercase">किराणा स्टोअर • आळते</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="tel:9860981330" class="action-button px-5 py-2 rounded-full text-xs flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> कॉल
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section min-h-[45vh] flex items-center text-white">
+        <div class="container mx-auto px-6 py-12 text-center md:text-left">
+            <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-md text-xs font-bold mb-4 inline-block tracking-widest uppercase">Since 1974</span>
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 marathi-font italic">शुद्ध किराणा, <span class="text-amber-500">योग्य दर!</span></h2>
+            <p class="text-lg text-emerald-50 opacity-90">आळते (Alate) मधील ५० वर्षांचा विश्वास आता डिजिटल रूपात.</p>
+        </div>
+    </header>
+
+    <section class="py-16 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-4xl font-bold text-emerald-900 marathi-font italic underline decoration-amber-500 underline-offset-8">आजचे ताजे दर (अंदाजे)</h3>
+            <p class="text-gray-500 mt-4 text-sm">*दर बाजारभावानुसार बदलू शकतात.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white card-shadow rounded-3xl p-6 border-t-4 border-emerald-800">
+                <h4 class="text-xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
+                    <i class="fas fa-seedling text-amber-600"></i> धान्य आणि डाळी
+                </h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>कोलम तांदूळ (१ किलो)</span><span class="font-bold">₹६० - ७०</span></div>
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>तूर डाळ (१ किलो)</span><span class="font-bold">₹१६० - १७०</span></div>
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>साखर (१ किलो)</span><span class="font-bold">₹४० - ४५</span></div>
+                </div>
+            </div>
+
+            <div class="bg-white card-shadow rounded-3xl p-6 border-t-4 border-amber-600">
+                <h4 class="text-xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
+                    <i class="fas fa-mortar-pestle text-amber-600"></i> तेल आणि मसाले
+                </h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>शेंगदाणा तेल (१ लि.)</span><span class="font-bold">₹१७० - १८०</span></div>
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>सूर्यफूल तेल (१ लि.)</span><span class="font-bold">₹१२० - १३०</span></div>
+                    <div class="flex justify-between p-3 price-row rounded-lg"><span>चहा पावडर (२५० ग्रॅम)</span><span class="font-bold">₹११० - १२०</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="py-12 container mx-auto px-6">
+        <div class="bg-emerald-900 text-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <h3 class="text-3xl font-bold mb-4 marathi-font italic">स्मार्ट किराणा यादी</h3>
+            <p class="text-emerald-100 mb-6">तुमची यादी खाली लिहा आणि थेट शैलेश सरांच्या WhatsApp वर पाठवा.</p>
+            <textarea id="orderInput" rows="4" class="w-full bg-white/10 border border-white/20 p-6 rounded-2xl outline-none text-white placeholder:text-emerald-200/50 mb-4" placeholder="उदा. ५ किलो साखर, १ लि. तेल..."></textarea>
+            <button onclick="sendAIOrder()" class="action-button w-full py-4 rounded-xl text-lg flex items-center justify-center gap-3">
+                <i class="fab fa-whatsapp text-2xl"></i> ऑर्डर पाठवा
+            </button>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-10">
+            <div>
+                <h3 class="text-3xl font-bold text-emerald-900 mb-6 marathi-font italic">संपर्क आणि पत्ता</h3>
+                <div class="space-y-4 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i> 
+                        जे.एन. पायाशेट्टी किराणा स्टोअर,<br>
+                        मुख्य रस्ता, <strong>आळते</strong>,<br>
+                        ता. हातकणंगले, जि. कोल्हापूर.
+                    </p>
+                    <p><i class="fas fa-phone-alt text-amber-600 mr-2"></i> ९८६०९८१३३०</p>
+                    <p><i class="fas fa-envelope text-amber-600 mr-2"></i> payashettyshailesh@gmail.com</p>
+                    <p><i class="fab fa-instagram text-amber-600 mr-2"></i> @shailesh_payashetty_1188</p>
+                </div>
+            </div>
+            <div class="lg:col-span-2 h-[350px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15276.51642866979!2d74.34117515!3d16.8199738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1106e22f28093%3A0x86704620579e0f3!2sAlte%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200 text-center">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-emerald-900 mb-2 marathi-font italic">जे.एन. पायाशेट्टी किराणा स्टोअर</h3>
+            <p class="text-gray-400 text-[10px] tracking-[0.3em] uppercase mb-8">आळते • Quality Kirana Hub</p>
+            
+            <div class="bg-white/50 backdrop-blur inline-block px-8 py-4 rounded-3xl border border-gray-200 shadow-sm">
+                <p class="text-gray-500 text-sm mb-2 font-medium">Designed & Developed by</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+                    <span class="text-emerald-900 font-bold text-lg marathi-font italic">आदेश पायाशेट्टी</span>
+                    <a href="https://instagram.com/payashetty_aadesh_5577" target="_blank" class="text-pink-600 font-bold text-sm">
+                        <i class="fab fa-instagram"></i> @payashetty_aadesh_5577
+                    </a>
+                </div>
+            </div>
+            <p class="text-gray-400 text-[10px] mt-10 uppercase tracking-widest">© 2026 सर्व हक्क राखीव. आळते.</p>
+        </div>
+    </footer>
+
+    <script>
+        function sendAIOrder() {
+            const input = document.getElementById('orderInput').value;
+            if(!input) { alert("कृपया तुमची यादी लिहा!"); return; }
+            const message = encodeURIComponent(`नमस्ते शैलेश सर!\nमी आळते येथील वेबसाइटवरून ही किराणा ऑर्डर पाठवत आहे:\n\n*माझी यादी:*\n${input}\n\n_कृपया ही ऑर्डर तयार ठेवा._`);
+            window.open(`https://wa.me/919860981330?text=${message}`);
+        }
+    </script>
+</body>
+</html>
